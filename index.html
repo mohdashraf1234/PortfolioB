@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Developer Portfolio</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    
+    
+    
+    <!-- Navbar -->
+    <nav class="bg-gray-700 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Mohd Ashraf</a>
+            
+            <!-- Mobile navigation toggle button -->
+            <button class="menu-toggle md:hidden text-gray-300 hover:text-gray-400 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>  
+    
+            <!-- Navigation links -->
+            <ul class="menu hidden md:flex space-x-4">
+                <div class="icon-bar3 header-mobile_menu-custom-top rotate150 rotate135"></div>
+                <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                <li><a href="#skills" class="hover:text-gray-400">Skills</a></li>
+                <li><a href="#projects" class="hover:text-gray-400">Projects</a></li>
+                
+                <!-- Light Mode button visible on mobile only -->
+                <li class="light-mode-button">
+                    <button id="darkModeToggle" class="text-gray-300 hover:text-gray-400 focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+                        </svg>
+                        <span class="dark-mode-text">Light Mode</span>
+                    </button>
+                </li>
+                
+                <!-- Close button visible on mobile only -->
+                <li class="close-button"><a href="#closeBar" class="hover:text-gray-400">X</a></li>
+            </ul>
+        </div>
+    </nav>
+     
+    <!-- Hero Section -->
+    <section class="hero bg-gray-900 text-white py-20">
+        <div class="container mx-auto text-center">
+            <img src="/images/AshrafPic1.png" alt="Your Image" class="mx-auto mb-6" />
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Hi, I'm Mohd Ashraf</h1>
+            <p class="text-lg md:text-xl lg:text-2xl" style="position:relative; bottom:6%;">Software Developer</p>
+
+            <div class="flex justify-center"> 
+                <button id="DownloadCV" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded mr-2">
+                    Download CV
+                </button>
+
+                <button id="ContactInfo" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded mr-2">
+                        <a href="#contact" class="hover:text-gray-400">Contact Info</a>
+                </button>
+            </div>
+            <div class="flex justify-center mt-4"> 
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16M4 4a8 8 0 018-8 8 8 0 018 8 8 8 0 01-8 8 8 8 0 01-8-8zm2 0a2 2 0 100-4 2 2 0 000 4zm0 0c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zM22 14v6m0 0a2 2 0 11-4 0v-6m4 0h-4"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/mohdashraf1234" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.5c0-1 .5-2 1.5-2 2 0 3.5 2 3.5 5-2.5 1-5 1.5-5 1.5s-1.5-1-1.5-3c0-3 2.5-4 2.5-6-3-.5-6-1.5-6-6 0-1.5.5-2.5 1-3h-1c-.5 1-1 1.5-2 2 0 0-1.5 1-1.5 4 0 2.5 1.5 4 1.5 4s-1 1-1 2c0 1.5 1 2.5 1.5 3.5.5 1.5 2 2.5 3.5 2v3c-1.5.5-2.5 1-3 2 0 2 1 3 3 3-1.5 1-3 1-4 1 5 3 11 3 14-1 1-.5 2-1.5 2-3 0-2.5-2-2.5-2-1.5-.5-2-1.5-2-1.5z"/>
+                    </svg>
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+
+    
+    <section id="about" class="about py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">About Me</h2>
+            <p class="text-lg md:text-xl lg:text-2xl text-center max-w-2xl mx-auto" >I hold a B.Tech in Electronics and Communication Engineering from ITS engineering college Gr Noida and have a strong passion for technology. I enhanced my skills by enrolling at Jspider, where I specialized in full-stack Java development with a focus on the web. Through this program, I gained expertise in HTML, CSS, JavaScript, SQL, J2EE, SpringMVC/Spring Boot, microservices, and REST API. Additionally, I have a solid foundation in Java, with fourteen months of experience at Image Infosystems Pvt Ltd, Delhi, where I utilized Java frameworks for data manipulation</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills py-20">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">Skills</h2>
+            <div class="grid grid-cols-3 md:grid-cols-5 gap-4">
+                
+                <div class="skill-item skill-1"></div>
+                <div class="skill-item skill-2"></div>
+                <div class="skill-item skill-3"></div>
+                <div class="skill-item skill-4"></div>
+                <div class="skill-item skill-5"></div>
+                <div class="skill-item skill-6"></div>
+                <div class="skill-item skill-7"></div>
+                <div class="skill-item skill-8"></div>
+                <div class="skill-item skill-9"></div>
+                <div class="skill-item skill-10"></div>
+                <div class="skill-item skill-11"></div>
+                <div class="skill-item skill-12"></div>
+                <div class="skill-item skill-13"></div>
+                <div class="skill-item skill-14"></div>
+                <div class="skill-item skill-15"></div>
+              
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience-container" class="experience py-20">
+        <div class="experience-container">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Professional Experience</h2>
+            <p class="experience-text">
+                ⇒ During my fourteen-month tenure at Image Infosystem Pvt Ltd, I significantly contributed to software development projects. Engaging in both front-end and back-end tasks, I collaborated with teams to design, develop, and maintain innovative solutions. This experience honed my coding, problem-solving, and project management skills within the software development lifecycle.
+            </p><br>
+            <p class="experience-text1">
+                ⇒ During my six-month training at QSpiders Noida, I gained comprehensive expertise in Java full-stack development. Through hands-on learning and practical experience, I acquired essential skills in front-end and back-end technologies, enabling me to proficiently develop  and dynamic web applications.
+
+            </p>
+
+            <img src="./images/JavaTrainingCertificate.jpg" alt="Certificate" class="certificate-image" >
+        </div>
+    </section>
+    
+
+    <!-- Projects Section     class="projects py-20 bg-gray-100"-->
+    <section id="projects"  class="projects py-20 bg-gray-100">
+        <div class="container mx-auto" >
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="border p-4 rounded">
+                    <div id="pr1" class="border border-gray-400 p-3 rounded h-24 mb-4 flex justify-center items-center background-div">
+                      
+                       
+                    </div>
+                    <h3 style="text-align: center; font-family: sans-serif; position: relative; bottom: 6px;">Flipkart Clone</h3>
+                    <div class="flex justify-center"> 
+                        <button id="liveProjectBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+                            Live Project
+                        </button>
+                        <button id="githubLinkBtn" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded mr">
+                            GitHub Link
+                        </button>
+                    </div>
+                </div>
+
+                <div class="border p-4 rounded">
+                    <div id="pr2" class="border border-gray-400 p-3 rounded h-24 mb-4 flex justify-center items-center background-div">
+                       
+                       
+                    </div>
+                    <h3 style="text-align: center; font-family: sans-serif; position: relative; bottom: 6px;">Music System</h3>
+                    <div class="flex justify-center"> 
+                        <button id="liveProjectBtn1" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+                            Live Project
+                        </button>
+                        <button id="githubLinkBtn1" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded mr">
+                            GitHub Link
+                        </button>
+                    </div>
+                </div>
+                <div class="border p-4 rounded">
+                    <div id="pr3" class="border border-gray-400 p-3 rounded h-24 mb-4 flex justify-center items-center background-div">
+                       
+                       
+                    </div>
+                    <h3 style="text-align: center; font-family: sans-serif; position: relative; bottom: 6px;">Snake Game</h3>
+                    <div class="flex justify-center"> 
+                        <button id="liveProjectBtn2" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+                            Live Project
+                        </button>
+                        <button id="githubLinkBtn2" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded mr">
+                            GitHub Link
+                        </button>
+                    </div>
+                </div>
+                <div class="border p-4 rounded">
+                    <div id="pr4" class="border border-gray-400 p-3 rounded h-24 mb-4 flex justify-center items-center background-div">
+                       
+                       
+                    </div>
+                    <h3 style="text-align: center; font-family: sans-serif; position: relative; bottom: 6px;">3D Calculator</h3>
+                    <div class="flex justify-center">
+                        <button id="liveProjectBtn3" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+                            Live Project
+                        </button>
+                        <button id="githubLinkBtn3" class="bg-gray-700 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded mr">
+                            GitHub Link
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+   
+        <section id="contact" class="contact py-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-center">Contact Me</h2>
+                <form method="POST" action="https://api.web3forms.com/submit" class="max-w-md mx-auto" id="contactForm">
+                    <input type="hidden" name="access_key" value="0b01665d-e96f-49c0-8b51-3b0d0a5f0c92">
+                    <div class="mb-4">
+                        <label for="name" class="block mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-md">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full px-4 py-2 border rounded-md"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-gray-700">Submit</button>
+                </form>
+            </div>
+        </section>
+ 
+    
+   
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="left-content">
+                <p>Mohd Ashraf</p>
+                <p>Email: mohd36089@gmail.com</p>
+                <p>Mobile: ******</p>
+                <p>Software  Developer</p>
+                <p>Location: Noida,Uttar Pradesh</p>
+
+            </div>
+            <div class="right-content">
+                
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><img class="social-icon" src="./images/linkdlnImg.png" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/a_cube___?igsh=MXUzdm01NGEza255eA==/"><img class="social-icon" src="./images/tweeter.png" alt="Twitter"></a>
+                <a href="https://x.com/MdAshraf827167?t=ptQVrX9kW_6ad0JvxzYKrg&s=09"><img class="social-icon" src="./images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div>
+
+            <p  style="text-align: center;">&copy; 2024 MdAshraf.in</p>
+        </div>
+        <!--
+Notes 
+
+colorfull Css For Contact
+
+/* Apply colorful 3D effect on hover */
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #0000ff, #8000ff, #ff00ff); /* Add colorful gradient */
+    transition: transform 0.5s ease; /* Add transition for smooth effect */
+    z-index: -1; /* Move gradient behind other content */
+}
+
+.contact:hover::before {
+    transform: rotate(20deg) scale(1.2); /* Adjust rotation and scale for dynamic effect */
+}
+
+        
+       /* Add padding to the body for mobile screens */
+@media (max-width: 768px) {
+    body {
+        padding-left: 20px; /* Adjust padding as needed */
+        padding-right: 20px; /* Adjust padding as needed */
+    }
+}
+
+
+
+
+        -->
+    </footer>
+    
+    
+
+    <!-- JavaScript -->
+    <script src="script.js">
+
+    </script>
+    
+
+</body>
+
+</html>
