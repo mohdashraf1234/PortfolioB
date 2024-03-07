@@ -73,6 +73,26 @@ document.addEventListener('DOMContentLoaded', function () {
         window.open("https://github.com/mohdashraf1234/Calculator", "_blank");
     });
 
+   /*Project 5*/
+    document.getElementById("liveProjectBtn4").addEventListener("click", function () {
+        window.open(" ", "_blank");
+    });
+
+    
+    document.getElementById("githubLinkBtn4").addEventListener("click", function () {
+        window.open(" ", "_blank");
+    });
+
+    /*Project 6 */
+    document.getElementById("liveProjectBtn5").addEventListener("click", function () {
+        window.open(" ", "_blank");
+    });
+
+    
+    document.getElementById("githubLinkBtn5").addEventListener("click", function () {
+        window.open(" ", "_blank");
+    });
+
 /*  menu close and toggle **/
 const menuToggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
