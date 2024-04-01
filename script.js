@@ -74,14 +74,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
    /*Project 5*/
-    document.getElementById("liveProjectBtn4").addEventListener("click", function () {
-        window.open(" ", "_blank");
-    });
+    // document.getElementById("liveProjectBtn4").addEventListener("click", function () {
+    //     window.open(" ", "_blank");
+    // });
 
     
-    document.getElementById("githubLinkBtn4").addEventListener("click", function () {
-        window.open(" ", "_blank");
-    });
+    // document.getElementById("githubLinkBtn4").addEventListener("click", function () {
+    //     window.open(" ", "_blank");
+    // });
 
     /*Project 6 */
     document.getElementById("liveProjectBtn5").addEventListener("click", function () {
@@ -118,6 +118,23 @@ document.querySelector('a[href="#closeBar"]').addEventListener('click', function
     event.preventDefault(); 
     closeMenu();
 });
+
+
+   document.getElementById("liveProjectBtn4").addEventListener("click", function() {
+    
+    var videoUrl = "./images/Screen Recording - Made with FlexClip (1).mp4";
+   
+    window.open(videoUrl, "_blank");
+});
+
+document.getElementById("githubLinkBtn4").addEventListener("click", function() {
+    
+    var githubUrl = "https://github.com/mohdashraf1234/CloudContactBaseContactSystemApplication";
+   
+    window.open(githubUrl, "_blank");
+});
+
+   
 
 
 
