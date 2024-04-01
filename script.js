@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
     
         var link = document.createElement("a");
       
-        link.href = "/AshrafCV3.pdf";
+        link.href = "./Resume (2).pdf";
       
-        link.download = "Resume(2).pdf";
+        link.download = "./Resume(2).pdf";
       
         link.click();
     });
