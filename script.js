@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
       
         link.href = "/AshrafCV3.pdf";
       
-        link.download = "AshrafCV.pdf";
+        link.download = "Resume(2).pdf";
       
         link.click();
     });
