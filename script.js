@@ -84,14 +84,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // });
 
     /*Project 6 */
-    document.getElementById("liveProjectBtn5").addEventListener("click", function () {
-        window.open(" ", "_blank");
-    });
+    // document.getElementById("liveProjectBtn5").addEventListener("click", function () {
+    //     window.open(" ", "_blank");
+    // });
 
     
-    document.getElementById("githubLinkBtn5").addEventListener("click", function () {
-        window.open(" ", "_blank");
-    });
+    // document.getElementById("githubLinkBtn5").addEventListener("click", function () {
+    //     window.open(" ", "_blank");
+    // });
 
 /*  menu close and toggle **/
 const menuToggle = document.querySelector('.menu-toggle');
@@ -130,6 +130,20 @@ document.querySelector('a[href="#closeBar"]').addEventListener('click', function
 document.getElementById("githubLinkBtn4").addEventListener("click", function() {
     
     var githubUrl = "https://github.com/mohdashraf1234/CloudContactBaseContactSystemApplication";
+   
+    window.open(githubUrl, "_blank");
+});
+
+   document.getElementById("liveProjectBtn5").addEventListener("click", function() {
+    
+    var videoUrl = "./images/TMS.mp4";
+   
+    window.open(videoUrl, "_blank");
+});
+
+document.getElementById("githubLinkBtn5").addEventListener("click", function() {
+    
+    var githubUrl = "https://github.com/mohdashraf1234/TaskManagmentSystem";
    
     window.open(githubUrl, "_blank");
 });
