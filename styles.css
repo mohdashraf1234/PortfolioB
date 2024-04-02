@@ -722,6 +722,20 @@
         color: blue; 
     }
 
+ #pr7{
+        background-image: url('./images/Empty1.png');
+        background-size: cover;
+        background-position: center;
+        color: blue; 
+    }
+
+ #pr8{
+        background-image: url('./images/Empty6.png');
+        background-size: cover;
+        background-position: center;
+        color: blue; 
+    }
+
 
     .text-lg,
 .md-text-xl,
