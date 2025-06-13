@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
     
         var link = document.createElement("a");
       
-        link.href = "./Resume (2).pdf";
+        link.href = "./AshrafResume8585.pdf";
       
-        link.download = "./Resume(2).pdf";
+        link.download = "./AshrafResume8585.pdf";
       
         link.click();
     });
