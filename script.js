@@ -126,6 +126,14 @@ document.querySelector('a[href="#closeBar"]').addEventListener('click', function
    
     window.open(videoUrl, "_blank");
 });
+   
+
+      document.getElementById("liveProjectBtn7").addEventListener("click", function() {
+    
+    var videoUrl = "./StudentReport Video (online-video-cutter.com).mp4";
+   
+    window.open(videoUrl, "_blank");
+});
 
 document.getElementById("githubLinkBtn4").addEventListener("click", function() {
     
