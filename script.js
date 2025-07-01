@@ -156,32 +156,28 @@ document.getElementById("githubLinkBtn5").addEventListener("click", function() {
     window.open(githubUrl, "_blank");
 });
 
-   let currentIndex = 0;
-  const slider = document.getElementById("slider");
-  const slides = slider.children;
-  const totalSlides = slides.length;
-
-  function showSlide(index) {
-    slider.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    showSlide(currentIndex);
-  }
-
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    showSlide(currentIndex);
-  }
-
-   
-
-
-
-    
-
-
 
 
 });
+
+let slideIndex = 0;
+  const slides = document.getElementsByClassName("slides");
+
+  function showSlide(index) {
+    if (index >= slides.length) slideIndex = 0;
+    if (index < 0) slideIndex = slides.length - 1;
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+  }
+
+  function changeSlide(n) {
+    slideIndex += n;
+    showSlide(slideIndex);
+  }
+
+  // Show first image on load
+  showSlide(slideIndex);
