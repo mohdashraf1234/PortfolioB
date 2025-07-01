@@ -429,15 +429,18 @@
   .slider-container {
     width: 100%;
     max-width: 500px;
-    position: relative;
     margin: 20px auto;
+    position: relative;
+    overflow: hidden;
   }
 
   .slides {
     display: none;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    max-width: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
   }
 
   .arrow {
@@ -450,7 +453,7 @@
     padding: 8px 12px;
     cursor: pointer;
     border: none;
-    z-index: 10;
+    z-index: 2;
     border-radius: 50%;
   }
 
@@ -464,14 +467,18 @@
 
   @media (max-width: 600px) {
     .arrow {
-      font-size: 20px;
+      font-size: 18px;
       padding: 6px 10px;
+    }
+
+    .slider-container {
+      max-width: 100%;
+      padding: 0 10px;
     }
   }
 
 
-
-
+ 
  
 /*------------------*/
 
