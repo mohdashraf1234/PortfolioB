@@ -140,20 +140,16 @@
             
             <img src="./images/Mohd-AshrafWed-Jul-31-2024-12-26-37-GMT-0000 - Coordinated-Universal-Time - 1025u0z6_page-0001 (1).jpg" alt="Certificate2" class="certificate-image2" ><br>
 
-           <div class="relative w-full max-w-3xl mx-auto mt-10">
-  <div class="overflow-hidden rounded-xl">
-    <div class="flex transition-transform duration-500 ease-in-out" id="slider">
-      <img src="./staragri_pic.jpg" alt="StarAgri" class="w-full flex-shrink-0 object-cover">
-      <img src="./imageinfo.jpg" alt="ImageInfo" class="w-full flex-shrink-0 object-cover">
-      <img src="./star3.jpg" alt="Star3" class="w-full flex-shrink-0 object-cover">
-    </div>
-  </div>
-  <!-- Navigation buttons -->
-  <div class="flex justify-between mt-4">
-    <button onclick="prevSlide()" class="bg-gray-800 text-white px-4 py-2 rounded">Prev</button>
-    <button onclick="nextSlide()" class="bg-gray-800 text-white px-4 py-2 rounded">Next</button>
-  </div>
+          <div class="slider-container" style="width: 500px; position: relative; margin: auto;">
+  <img class="slides" src="./staragri_pic.jpg" style="width:100%; display:none;">
+  <img class="slides" src="./imageinfo.jpg" style="width:100%; display:none;">
+  <img class="slides" src="./star3.jpg" style="width:100%; display:none;">
+
+  <button class="arrow left-arrow" onclick="changeSlide(-1)" style="position:absolute; top:50%; left:0; transform:translateY(-50%); font-size:30px; background:rgba(0,0,0,0.5); color:white; padding:8px 12px; cursor:pointer; border:none;">&#10094;</button>
+
+  <button class="arrow right-arrow" onclick="changeSlide(1)" style="position:absolute; top:50%; right:0; transform:translateY(-50%); font-size:30px; background:rgba(0,0,0,0.5); color:white; padding:8px 12px; cursor:pointer; border:none;">&#10095;</button>
 </div>
+
 
 
         </div>
